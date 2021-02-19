@@ -6,7 +6,7 @@ const By=webDriver.By;
 await driver.get('https://www.google.ru/');
 console.log("Браузер взлетел! Поиск по ключевому слову PIERRE WOODMAN");
 const searchField=await driver.findElement(By.xpath('//input[@title="Поиск"]'));
-searchField.sendKeys('SELENIUM');
+searchField.sendKeys('PIERRE WOODMAN');
 await driver.sleep(1000);
 searchField.sendKeys(webDriver.Key.ENTER);
     await driver.sleep(3000);
