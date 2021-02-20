@@ -13,16 +13,6 @@ private static Connection connection;
 private static Statement statement;
 
     public static void main(String[] args) throws IllegalAccessException, SQLException {
-      /*  CallableStatement cstmt = connection.prepareCall ("{call getData(?, ?)}");
-        cstmt.registerOutParameter(1, java.sql.Types.TINYINT);
-        cstmt.registerOutParameter(2, java.sql.Types.DECIMAL, 2);
-// Вызов хранимой процедуры
-        cstmt.executeQuery();
-// Чтение выходных данных
-        byte x = cstmt.getByte(1);
-        java.math.BigDecimal n = cstmt.getBigDecimal(2, 2);
-*/
-
         Reflect o=new Reflect();
         Class reflectClass=Reflect.class;
         Field[] sourceFields = reflectClass.getDeclaredFields();
