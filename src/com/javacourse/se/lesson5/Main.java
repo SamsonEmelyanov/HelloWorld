@@ -29,7 +29,6 @@ public class Main {
         public static void main(String[] args){
 
 
-
                /* System.out.println(isItPolindrom());*/
                 JOptionPane.showMessageDialog(null,a+"\nЭто полиндром? \n"+isItPolindrom());
         }
