@@ -7,6 +7,17 @@ public class Factorial {
     public static void main(String[] args) {
 
         System.out.println(factor(8));
+
+        Thread tr1=new Thread(()-> System.out.println("tr1"));
+        Thread tr2=new Thread(()-> System.out.println("tr2"));
+        Thread tr3=new Thread(()-> System.out.println("tr3"));
+        Thread tr4=new Thread(()-> System.out.println("tr4"));
+
+        tr1.start();
+        tr2.start();
+        tr3.start();
+        tr4.start();
+
     }
 
     public static int factor(int n){
@@ -26,4 +37,5 @@ public class Factorial {
         return n;*/
 
     }
+
 }
