@@ -6,7 +6,7 @@ public class Factorial {
 
     public static void main(String[] args) throws InterruptedException {
 
-        System.out.println(factor(8));
+
 
         Thread tr1=new Thread(()-> System.out.println("tr1"));
         Thread tr2=new Thread(()-> System.out.println("tr2"));
@@ -17,6 +17,7 @@ public class Factorial {
         tr2.start();
         tr3.start();
         tr4.start();
+        System.out.println(factor(8));
 
     }
 
