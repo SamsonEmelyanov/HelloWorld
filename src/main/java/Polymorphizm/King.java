@@ -2,7 +2,7 @@ package Polymorphizm;
 
 public class King {
 
-    public static void king(Animal obj){
+    public static void king(Polymorphizm.Animal obj){
 
         obj.Eat();
         obj.Sleep();

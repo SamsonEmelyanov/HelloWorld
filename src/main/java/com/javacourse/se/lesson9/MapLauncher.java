@@ -48,11 +48,11 @@ public class MapLauncher {
 
     }
 
- /*   private static void printMap(Map<String,Integer>wordMap){
+    private static void printMap(Map<String,Integer>wordMap){
         Map<String,Integer>wordTreeMap=new TreeMap<>(wordMap);
         Set<String>keys = wordTreeMap.keySet();
         for(String key : keys){
             System.out.printf("%-10s%-10s \n",key,wordMap.get(key));
         }
-    }*/
+    }
 }
