@@ -4,9 +4,9 @@ const By=webDriver.By;
 
 (async function testRun(){
 await driver.get('https://www.google.ru/');
-console.log("Браузер взлетел! Поиск по ключевому слову PIERRE WOODMAN");
+console.log("Браузер взлетел! Поиск по ключевому слову Google");
 const searchField=await driver.findElement(By.xpath('//input[@title="Поиск"]'));
-searchField.sendKeys('PIERRE WOODMAN');
+searchField.sendKeys('Google');
 await driver.sleep(1000);
 searchField.sendKeys(webDriver.Key.ENTER);
     await driver.sleep(3000);
